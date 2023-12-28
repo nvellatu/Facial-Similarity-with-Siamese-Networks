@@ -1,20 +1,13 @@
-# Facial Similarity with Siamese Networks in Pytorch
-You can read the accompanying article at https://hackernoon.com/one-shot-learning-with-siamese-networks-in-pytorch-8ddaab10340e
+I worked alongside two classmates to design Siamese networks trained to verify a student's identity. 
+In practice:
+- First, take a picture of yourself.
+- Take a picture of your ID card
+- An image processing function will extract the ID# from the image of the ID card.
+- A search will be run on our mock database to find the corresponding stored image for that ID#
+- The camera-captured image along with the stored image will be run through our model to produce a "dissimilarity score", which measures how different the people in the two images are.
+- Generally, a score <1 means that the student passes the verification and matches the stored image; a score >1 generally means that the student fails the verification and the two images are of different people. 
 
-The goal is to teach a siamese network to be able to distinguish pairs of images. 
-This project uses pytorch. 
-
-Any dataset can be used. Each class must be in its own folder. This is the same structure that PyTorch's own image folder dataset uses.
-
-## Update: Looking for contributor (July 2020)
-If you would like to be a part of this projec, please head to https://github.com/harveyslash/Facial-Similarity-with-Siamese-Networks-in-Pytorch/issues/35
-
-
-### Converting pgm files (if you decide to use the AT&T dataset) to png
-1. Install imagemagick 
-2. Go to root directory of the images
-3. Run `find -name "*pgm" | xargs -I {} convert {} {}.png`
-
+The model is not 100% accurate due to limited training images (only 370 images of 37 people used for training). Still, we believe we have increased its accuracy by using a pre-trained VGG model as well as augmenting the training data.
 
 
 ## Installing the right version of PyTorch 
