@@ -9,6 +9,8 @@ I worked alongside two classmates to design Siamese networks trained to verify a
 
 The model is not 100% accurate due to limited training images (only 370 images of 37 people used for training). Still, we believe we have increased its accuracy by using a pre-trained VGG model as well as augmenting the training data.
 
+For more information look at our report titled "Implementing_Facial_Recognition_Technology_for_Student_ID_Verification.pdf"
+
 
 ## Installing the right version of PyTorch 
 This project is updated to be compatible with pytorch 0.4.0
