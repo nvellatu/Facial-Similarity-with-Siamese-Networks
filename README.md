@@ -1,5 +1,5 @@
 I worked alongside two classmates to design Siamese networks trained to verify a student's identity. 
-##In practice:
+## In practice:
 - First, take a picture of yourself.
 - Take a picture of your ID card
 - An image processing function will extract the ID# from the image of the ID card.
