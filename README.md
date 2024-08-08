@@ -1,4 +1,4 @@
-I worked alongside two classmates to design Siamese networks trained to verify a student's identity. 
+I worked alongside two classmates to design a Siamese Network model trained to verify a student's identity. 
 ## In practice:
 - First, take a picture of yourself.
 - Take a picture of your ID card
