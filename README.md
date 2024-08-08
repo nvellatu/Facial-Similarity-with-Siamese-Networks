@@ -7,7 +7,7 @@ I worked alongside two classmates to design a Siamese Network model trained to v
 - The camera-captured image along with the stored image will be run through our model to produce a "dissimilarity score", which measures how different the people in the two images are.
 - Generally, a score <1 means that the student passes the verification and matches the stored image; a score >1 generally means that the student fails the verification and the two images are of different people. 
 
-The model is not 100% accurate due to limited training images (only 370 images of 37 people used for training). Still, we believe we have increased its accuracy by using a pre-trained VGG model as well as augmenting the training data.
+The model does not have an impressive accuracy due to limited training images (only 370 images of 37 people used for training). Still, we believe we have increased its accuracy by using a pre-trained VGG model as well as augmenting the training data.
 
 For more information look at our report titled "Implementing_Facial_Recognition_Technology_for_Student_ID_Verification.pdf"
 
